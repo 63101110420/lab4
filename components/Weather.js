@@ -6,7 +6,7 @@ export default function Weather(props) {
     useEffect(() => {
         console.log(`fetching data with zipCode = ${props.zipCode}`)
         if (props.zipCode) {
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${props.zipCode},th&units=metric&APPID=...`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${props.zipCode},th&units=metric&APPID=219063cf32ca898b845e992852fb450d`)
         .then((response) => response.json())
         .then((json) => {
         setForecastInfo({
