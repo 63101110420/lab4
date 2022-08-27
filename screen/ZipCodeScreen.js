@@ -32,10 +32,33 @@ export default function ZipCodeScreen(){
     )
 }
 const styles = StyleSheet.create({
-    zipItem:{
+    zipItem: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        paddingBottom: 40,
+        paddingTop: 30
     },
-
+    zipPlace: {
+        flex: 1,
+        fontSize: 20,
+        color: "white",
+        textAlign: "center",
+        textShadowOffset: { width: 2, height: 2 },
+        textShadowRadius: 10,
+        textShadowColor: "black",
+    },
+    zipCode: {
+        flex: 1,
+        fontSize: 20,
+        color: "white",
+        textShadowOffset: { width: 2, height: 2 },
+        textShadowRadius: 10,
+        textShadowColor: "black",
+        textAlign: "center"
+    },
+    bg: {
+        width: "100%",
+        height: "100%",
+    },
 })
