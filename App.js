@@ -1,6 +1,8 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet,  View } from 'react-native';
 import Weather from './components/Weather';
+import Constants frome 'expo-constants';
 
 export default function App() {
   
@@ -16,9 +18,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: Constants.StatusBarHeight
   },
+  backdrop: {
+    flexDirection: 'column',
+    alignItems: 'center'
+  }
 });
